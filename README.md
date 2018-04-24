@@ -1,4 +1,4 @@
-# SeaShip
+# SeaShip ![Travis](https://travis-ci.org/ronek22/SeaShip.svg?branch=master)
 Program, pozwala na przemieszczanie się statkiem po morzu. Morze ma wyspy na które statek nie może wpłynąć.
 Program spełnia następujące wymagania:
 - Określone są punkt początkowy(x,y) statku oraz jego kierunek (N -> północ, S -> południe, E -> wschód, W -> zachód).
