@@ -110,9 +110,24 @@ public class Game {
             islands[i++] = new Coord(Integer.parseInt(pos[0]), Integer.valueOf(pos[1]));
         }
         this.board = new Board(size, islands);
-
-
     }
+
+    public void printGame(){
+        for(int i = 0; i < board.size; i++){
+            for(int j = 0; j < board.size; j++){
+                if(ship.coord.getX() == j && ship.coord.getY() == i){
+                    System.out.print(ship + "\t");
+                } else if(board.isIsland(j, i)){
+                    System.out.print("O\t");
+                } else {
+                    System.out.print("~\t");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("SHIP POSITION: " + ship.coord);
+    }
+
 
 
 }

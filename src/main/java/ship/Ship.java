@@ -46,9 +46,13 @@ public class Ship {
 
     
     @Override
-
     public boolean equals(Object o) {
         Ship c = (Ship) o;
         return c.dir == this.dir && c.coord.equals(this.coord);
+    }
+
+    @Override
+    public String toString(){
+        return dir.toString();
     }
 }
